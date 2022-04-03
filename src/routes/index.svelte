@@ -1,33 +1,11 @@
-<script>
-    import DisplayContainer from "../components/DisplayContainer.svelte";
-    import InputContainer from "../components/InputContainer.svelte";
-</script>
+<div>
 
-<div class="container">
-    <div class="item data-container">
-        <DisplayContainer />
-    </div>
-    <div class="item input-container">
-        <InputContainer />
-    </div>
+    <form action="" method="post">
+        <label for="room-name">Room Name</label>
+        <input type="text" name="room-name" id="room-name" />
+        <button type="submit">Join</button>
+    </form>
+
+    <button>Create Room</button>
+
 </div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 2em;
-    }
-
-    .input-container {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 1em;
-    }
-
-    
-    .data-container { 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr)
-    }
-</style>
